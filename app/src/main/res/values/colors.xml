@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#333232</color>
+    <color name="lightGreen">#9abca7</color>
+    <color name="teal">#016b6d</color>
+    <color name="lightPink">#e1a6b3</color>
+    <color name="yellow">#ffbc42</color>
+    <color name="hotPink">#d81159</color>
+    <color name="lavender">#e0bad7</color>
+    <color name="green">#61d095</color>
+    <color name="navyBlue">#282953</color>
+    <color name="orange">#f96f39</color>
+    <color name= "graphite">#403B2E</color>
+    <color name= "pencil">#535353</color>
+    <color name= "white">#FFFFFF</color>
+
+</resources>
+
+
+<!--
+                X and O color combo
+                red and blu - OK
+                black 333232 and light green 9abca7 - OK
+                teal 016b6d and light pink e1a6b3 - OK
+                yellow ffbc42 and hot pink d81159 - OK
+                lavender e0bad7 and green 61d095 - OK
+                navy blue 282953 and orange f96f39 - OK
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

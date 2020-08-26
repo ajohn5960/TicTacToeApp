@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardActivity">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/is_arrow_clicked"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/optionsBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/is_options_clicked"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="@+id/backBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <!-- FIRST ROW -->
+    <!-- Ply 1 X   0 - 0   O Ply 2 -->
+
+    <TextView
+        android:id="@+id/scoreTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="casual"
+        android:text="X  0 - 0  O"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rowTwoTL"
+        app:layout_constraintEnd_toStartOf="@+id/rowTwoTL"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="@+id/backBtn"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <TableLayout
+        android:id="@+id/firstRowTL"
+        android:layout_width="345dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071">
+
+        <TableRow
+            android:id="@+id/tableRowOne"
+            android:layout_width="380dp"
+            android:layout_height="105dp"
+            android:background="@color/black"
+            android:divider="@android:drawable/divider_horizontal_textfield">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="0sp"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/whitespace" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="15sp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/whitespace" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="15sp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/whitespace" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="345dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/firstRowTL"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/firstRowTL"
+        app:layout_constraintTop_toBottomOf="@+id/firstRowTL"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="345dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/firstRowTL"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstRowTL"
+        app:layout_constraintTop_toBottomOf="@+id/rowTwoTL"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- SECOND ROW -->
+    <TableLayout
+        android:id="@+id/rowTwoTL"
+        android:layout_width="345dp"
+        android:layout_height="105dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/firstRowTL"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/firstRowTL"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+            android:id="@+id/tableRowTwo"
+            android:layout_width="379dp"
+            android:layout_height="105dp"
+            android:background="@color/black"
+
+            android:divider="@android:drawable/editbox_dropdown_dark_frame"
+            app:layout_constraintBottom_toBottomOf="@+id/rowTwoTL"
+            app:layout_constraintEnd_toEndOf="@+id/firstRowTL"
+            app:layout_constraintStart_toStartOf="@+id/firstRowTL"
+            app:layout_constraintTop_toTopOf="@+id/rowTwoTL">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="0dp"
+                android:background="@color/pencil"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
+                app:layout_constraintStart_toStartOf="@+id/rowTwoTL"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                app:srcCompat="@drawable/whitespace" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="15sp"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
+                app:layout_constraintStart_toStartOf="@+id/rowTwoTL"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                app:srcCompat="@drawable/whitespace" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="15sp"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
+                app:layout_constraintStart_toStartOf="@+id/rowTwoTL"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                app:srcCompat="@drawable/whitespace" />
+
+        </TableRow>
+    </TableLayout>
+
+
+    <!-- THIRD ROW -->
+    <TableLayout
+        android:id="@+id/rowThreeTL"
+        android:layout_width="340dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/firstRowTL"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@+id/firstRowTL"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TableRow
+            android:id="@+id/tableRowThree"
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="-4dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/rowThreeTL"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
+                app:srcCompat="@drawable/whitespace" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="15dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/rowThreeTL"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
+                app:srcCompat="@drawable/whitespace" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="15dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/rowThreeTL"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
+                app:srcCompat="@drawable/whitespace" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/roundsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text=" "
+        android:textSize="27sp"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreTV"
+        app:layout_constraintEnd_toEndOf="@+id/optionsBtn"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/rowTwoTL"
+        app:layout_constraintTop_toTopOf="@+id/scoreTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--
+     - between image - editbox cropdown dark frame
+     - divider horizontal = height30
+     -->
