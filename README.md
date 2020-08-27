@@ -1,7 +1,7 @@
 # TicTacToeApp
 An Android Tic Tac Toe application with the following features:
 - one player & two player mode
-- one, three, and five round options
+- best of one, three, or five rounds
 - six color options for game pieces 
 ## What I learned
 -	Utilized Android studio IDE
