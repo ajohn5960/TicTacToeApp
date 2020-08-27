@@ -142,18 +142,4 @@ public class ChoosePieceActivity extends AppCompatActivity {
     }
 
 
-
-
-
-    //getImgView(i).setImageResource(getDeselectedImgResId(i));
-
-    /*
-    private void scaleImg(ImageView imgView, int resPicIdx){
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(getResources(), resPicIdx, options);
-
-    }
-    */
-
 }
