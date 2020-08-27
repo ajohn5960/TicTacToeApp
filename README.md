@@ -1,5 +1,5 @@
 # TicTacToeApp
-o	An Android Tic Tac Toe application with one and two player game mode
+An Android Tic Tac Toe application with one and two player game mode
 ## What I learned
 -	Utilized Android studio IDE
 -	Designed user interface for landscape and vertical layout within XML file using RelativeLayout, ImageView, and Button
