@@ -1,4 +1,4 @@
-# TicTacToeApp
+# Tic Tac Toe App
 An Android Tic Tac Toe application with the following features:
 - one player & two player mode
 - best of one, three, or five rounds
