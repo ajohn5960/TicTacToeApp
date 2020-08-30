@@ -11,3 +11,6 @@ An Android Tic Tac Toe application with the following features:
 -	Create a 4 by 4 board game mode
 -	Develop a user interface for night mode
 -	Integrate background music 
+
+
+ [![Watch the video]( https://img.youtube.com/vi/kHkEeUmHo4o/0.jpg)](https://youtu.be/kHkEeUmHo4o)
